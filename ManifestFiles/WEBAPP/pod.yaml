@@ -13,7 +13,9 @@ spec:
           - name: DBUSER
             value: root
           - name: DBHOST
-            value: "mysql.database.svc.cluster.local"
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
           - name: DBPORT
             value: "3306"
         ports:

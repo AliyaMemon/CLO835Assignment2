@@ -10,5 +10,5 @@ spec:
         env:
           - name: MYSQL_ROOT_PASSWORD
             value: pwd916
-    ports:
-      - containerPort: 3306
+        ports:
+          - containerPort: 3306
