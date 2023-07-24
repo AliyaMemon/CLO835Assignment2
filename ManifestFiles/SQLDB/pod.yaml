@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: pod-mysql
+    namespace: sqldb
+spec:
+    containers:
+      - name: aliya-mysql
+        image: 637338645550.dkr.ecr.us-east-1.amazonaws.com/aliya-mysql:v0.1
+        env:
+          - name: MYSQL_ROOT_PASSWORD
+            value: pwd916
+    ports:
+      - containerPort: 3306
