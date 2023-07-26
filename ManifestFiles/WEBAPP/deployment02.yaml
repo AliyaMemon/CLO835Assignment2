@@ -1,7 +1,7 @@
 apiVersion: apps/v2
 kind: Deployment
 metadata:
-  name: webapp-deployment
+  name: webapp-deployment-02
   namespace: webapp
   labels:
     app: employees
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: aliya-webapp
-        image: 637338645550.dkr.ecr.us-east-1.amazonaws.com/aliya-webapp:v0.1
+        image: 637338645550.dkr.ecr.us-east-1.amazonaws.com/aliya-webapp:v0.2
         env:
           - name: DBPWD
             value: pwd916
